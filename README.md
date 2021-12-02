@@ -2,7 +2,7 @@
 
 A cli tool for bore tech frontend team.
 
-![version](https://img.shields.io/npm/v/bore-cli) ![license](https://img.shields.io/github/license/xiaofuyesnew/bore-cli) ![node version](https://img.shields.io/node/v/bore-cli) ![build status](https://img.shields.io/github/workflow/status/xiaofuyesnew/bore-cli/publish)
+![version](https://img.shields.io/npm/v/bore-cli) ![license](https://img.shields.io/npm/l/bore-cli) ![node version](https://img.shields.io/node/v/bore-cli) ![build status](https://img.shields.io/github/workflow/status/xiaofuyesnew/bore-cli/publish)
 
 ### Install
 
