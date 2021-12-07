@@ -1,6 +1,6 @@
 import { exec } from 'child_process'
 
-const git = (command) =>
+const git = (command: string) =>
   new Promise((resolve, reject) => {
     exec(command, (error, stdout, stderr) => {
       if (error) {

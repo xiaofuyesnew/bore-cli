@@ -1,14 +1,14 @@
 import registry from './registry.json'
 import { version } from '../package.json'
-import { Command } from 'commander/esm.mjs'
+import { createCommand } from 'commander'
 import chalk from 'chalk'
 import { oraPromise } from 'ora'
 // import progress from 'progress'
 import inquirer from 'inquirer'
 
-import git from './git.js'
+import git from './git'
 
-const createProject = async (typeUrl, dir) => {
+const createProject = async (typeUrl: string, dir: string) => {
   console.log(chalk.blue(`Creating ${dir} from ${typeUrl} ...`))
   await oraPromise(
     (ora) => {
@@ -25,7 +25,7 @@ const createProject = async (typeUrl, dir) => {
   })
 }
 
-const program = new Command()
+const program = createCommand()
 
 program.version(
   chalk.gray(`bore-cli ${version}`),
