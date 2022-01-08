@@ -1,17 +1,17 @@
 {
   "name": "bore-cli",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "description": "",
-  "main": "./lib/index.js",
+  "main": "src/app.mjs",
   "type": "module",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=16.13.1"
   },
   "scripts": {
     "build": "rollup -c"
   },
   "bin": {
-    "bore": "./bin/index.js"
+    "bore": "src/app.mjs"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,7 @@
     "commander": "^8.3.0",
     "inquirer": "^8.2.0",
     "ora": "^6.0.1",
-    "progress": "^2.0.3"
+    "progress": "^2.0.3",
+    "zx": "^4.2.0"
   }
 }
